@@ -18,7 +18,9 @@ class Students {
   output() {
     //loop and print each Map object properties and values
     for (var item in people) {
-      print(item);
+      for (var e in item.entries){
+        print("${e.key} - ${e.value}");
+      }
     }
   }
 
